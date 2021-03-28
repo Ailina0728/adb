@@ -21,5 +21,5 @@ sed -i '$a src-git darkmatter https://github.com/apollo-ng/luci-theme-darkmatter
 sed -i '$a src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git' feeds.conf.default
 sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 sed -i '$a src-git jerrykuku https://github.com/jerrykuku/lua-maxminddb.git' feeds.conf.default
-sed -i '$a src-git jerrykuku https://github.com/jerrykuku/luci-app-vssr.git' feeds.conf.default
+sed -i '$a src-git Ailina0728 https://github.com/Ailina0728/luci-app-vssr' feeds.conf.default
 sed -i '$a src-git vernesong https://github.com/vernesong/OpenClash.git' feeds.conf.default
