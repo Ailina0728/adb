@@ -19,9 +19,9 @@ sed -i '$a src-git liuran001_packages https://github.com/liuran001/openwrt-packa
 sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
 sed -i '$a src-git darkmatter https://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
 sed -i '$a src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git' feeds.conf.default
-sed -i '$a svn co https://github.com/xiaorouji/openwrt-passwall/trunk/brook' feeds.conf.default
-sed -i '$a svn co https://github.com/xiaorouji/openwrt-passwall/trunk/shadowsocks-rust' feeds.conf.default
-sed -i '$a src-git https://github.com/jerrykuku/luci-theme-argon.git' feeds.conf.default
-sed -i '$a src-git https://github.com/jerrykuku/lua-maxminddb.git' feeds.conf.default
-sed -i '$a src-git https://github.com/jerrykuku/luci-app-vssr.git' feeds.conf.default
-sed -i '$a src-git https://github.com/vernesong/OpenClash.git' feeds.conf.default
+sed -i '$a svn co xiaorouji https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall' feeds.conf.default
+sed -i '$a svn co xiaorouji https://github.com/xiaorouji/openwrt-passwall/trunk/shadowsocks-rust' feeds.conf.default
+sed -i '$a src-git jerrykuku https://github.com/jerrykuku/luci-theme-argon.git' feeds.conf.default
+sed -i '$a src-git jerrykuku https://github.com/jerrykuku/lua-maxminddb.git' feeds.conf.default
+sed -i '$a src-git jerrykuku https://github.com/jerrykuku/luci-app-vssr.git' feeds.conf.default
+sed -i '$a src-git vernesong https://github.com/vernesong/OpenClash.git' feeds.conf.default
