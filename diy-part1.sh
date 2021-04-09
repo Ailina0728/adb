@@ -103,6 +103,9 @@ rm -rf syncthing
 svn co https://github.com/openwrt/packages/trunk/utils/syncthing
 popd
 
+# Add luci-AdGuardHome
+git clone --depth=1 https://github.com/AdguardTeam/AdGuardHome
+
 # Change default shell to zsh
 #sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
