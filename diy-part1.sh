@@ -57,7 +57,7 @@ git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 rm -rf ../lean/luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Add luci-theme-infinityfreedom
 git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
@@ -121,20 +121,20 @@ git clone --depth=1 https://github.com/AdguardTeam/AdGuardHome
 #popd
 
 # Add luci-app-adguardhome
-cp -r temp/luci/applications/luci-app-adguardhome luci/applications/luci-app-adguardhome
-cp -r temp/packages/net/adguardhome packages/net/adguardhome
-cp -r temp/packages/lang/node-yarn packages/lang/node-yarn
-cp -r temp/packages/devel/packr packages/devel/packr
+#cp -r temp/luci/applications/luci-app-adguardhome luci/applications/luci-app-adguardhome
+#cp -r temp/packages/net/adguardhome packages/net/adguardhome
+#cp -r temp/packages/lang/node-yarn packages/lang/node-yarn
+#cp -r temp/packages/devel/packr packages/devel/packr
 
 # Add luci-app-gowebdav
 #cp -r temp/luci/applications/luci-app-gowebdav luci/applications/luci-app-gowebdav
 #cp -r temp/packages/net/gowebdav packages/net/gowebdav
 
 # Add netdata
-rm -rf packages/admin/netdata
-rm -rf ../package/lean/luci-app-netdata
-cp -r temp/luci/applications/luci-app-netdata luci/applications/luci-app-netdata
-cp -r temp/packages/admin/netdata packages/admin/netdata
+#rm -rf packages/admin/netdata
+#rm -rf ../package/lean/luci-app-netdata
+#cp -r temp/luci/applications/luci-app-netdata luci/applications/luci-app-netdata
+#cp -r temp/packages/admin/netdata packages/admin/netdata
 
 # Add luci-app-smartdns
 #cp -r temp/luci/applications/luci-app-smartdns luci/applications/luci-app-smartdns
@@ -148,7 +148,7 @@ cp -r temp/packages/admin/netdata packages/admin/netdata
 #cp -r temp/packages/admin/gotop packages/admin/gotop
 
 # Add minieap
-cp -r temp/packages/net/minieap packages/net/minieap
-rm -rf temp
-popd
+#cp -r temp/packages/net/minieap packages/net/minieap
+#rm -rf temp
+#popd
 
