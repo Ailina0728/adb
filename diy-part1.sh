@@ -21,94 +21,94 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 sed -i '$a src-git darkmatter https://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
 
 # Add luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+sed -i '$a src-git https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 
 # Add luci-app-vssr 
-git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
-git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
+sed -i '$a src-git https://github.com/jerrykuku/lua-maxminddb.git' feeds.conf.default
+sed -i '$a src-git https://github.com/jerrykuku/luci-app-vssr' feeds.conf.default
 
 # Add mentohust & luci-app-mentohust
-git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
-git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
+sed -i '$a src-git https://github.com/BoringCat/luci-app-mentohust' feeds.conf.default
+sed -i '$a src-git https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk' feeds.conf.default
 
 # Add luci-proto-minieap
-git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
+sed -i '$a src-git https://github.com/ysc3839/luci-proto-minieap' feeds.conf.default
 
 # Add ServerChan
-git clone --depth=1 https://github.com/tty228/luci-app-serverchan
+sed -i '$a src-git https://github.com/tty228/luci-app-serverchan' feeds.conf.default
 
 # Add OpenClash
-git clone --depth=1 -b master https://github.com/vernesong/OpenClash
+sed -i '$a src-git -b master https://github.com/vernesong/OpenClash' feeds.conf.default
 
 # Add luci-app-onliner
-git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
+sed -i '$a src-git https://github.com/rufengsuixing/luci-app-onliner' feeds.conf.default
 
 # Add luci-app-diskman
-git clone --depth=1 https://github.com/SuLingGG/luci-app-diskman
+sed -i '$a src-git https://github.com/SuLingGG/luci-app-diskman' feeds.conf.default
 mkdir parted
 cp luci-app-diskman/Parted.Makefile parted/Makefile
 
 # Add luci-app-dockerman
 rm -rf ../lean/luci-app-docker
-git clone --depth=1 https://github.com/KFERMercer/luci-app-dockerman
-git clone --depth=1 https://github.com/lisaac/luci-lib-docker
+sed -i '$a src-git https://github.com/KFERMercer/luci-app-dockerman' feeds.conf.default
+sed -i '$a src-git https://github.com/lisaac/luci-lib-docker' feeds.conf.default
 
 # Add luci-theme-argon
 rm -rf ../lean/luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
-git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+sed -i '$a src-git -b 18.06 https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
+sed -i '$a src-git https://github.com/jerrykuku/luci-app-argon-config' feeds.conf.default
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Add luci-theme-infinityfreedom
-git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
+sed -i '$a src-git https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom' feeds.conf.default
 
 # Add luci-theme-atmaterial
-svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial
+svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial' feeds.conf.default
 
 # Add luci-app-advancedsetting
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting' feeds.conf.default
 
 # Add luci-app-smartinfo
-svn co https://github.com/281677160/openwrt-package/trunk/luci-app-smartinfo
+svn co https://github.com/281677160/openwrt-package/trunk/luci-app-smartinfo' feeds.conf.default
 
 # Add luci-app-dnsfilter
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-dnsfilter
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-dnsfilter' feeds.conf.default
 
 # Add luci-theme-opentomcat
-svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat
+svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat' feeds.conf.default
 
 # Add luci-theme-opentopd
-svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-opentopd
+svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-opentopd' feeds.conf.default
 
 # Add luci-theme-rosy
-svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-rosy
+svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-rosy' feeds.conf.default
 
 # Add luci-app-ttnode
-svn co https://github.com/281677160/openwrt-package/trunk/luci-app-ttnode
+svn co https://github.com/281677160/openwrt-package/trunk/luci-app-ttnode' feeds.conf.default
 
 # Add subconverter
-git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
+sed -i '$a src-git https://github.com/tindy2013/openwrt-subconverter' feeds.conf.default
 
 # Add luci-udptools
-git clone --depth=1 https://github.com/zcy85611/openwrt-luci-kcp-udp
+sed -i '$a src-git https://github.com/zcy85611/openwrt-luci-kcp-udp' feeds.conf.default
 
 # Add OpenAppFilter
-git clone --depth=1 https://github.com/destan19/OpenAppFilter
+sed -i '$a src-git https://github.com/destan19/OpenAppFilter' feeds.conf.default
 
 # Use Lienol's https-dns-proxy package
 pushd feeds/packages/net
 rm -rf https_dns_proxy
-svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy
+svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy' feeds.conf.default
 popd
 
 # Use snapshots' syncthing package
 pushd feeds/packages/utils
 rm -rf syncthing
-svn co https://github.com/openwrt/packages/trunk/utils/syncthing
+svn co https://github.com/openwrt/packages/trunk/utils/syncthing' feeds.conf.default
 popd
 
 # Add luci-AdGuardHome
-git clone --depth=1 https://github.com/AdguardTeam/AdGuardHome
+sed -i '$a src-git https://github.com/AdguardTeam/AdGuardHome' feeds.conf.default
 
 # Change default shell to zsh
 #sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
