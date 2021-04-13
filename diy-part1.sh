@@ -22,7 +22,7 @@ sed -i '$a src-git darkmatter https://github.com/apollo-ng/luci-theme-darkmatter
 # Add luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
-# Add luci-app-vssr <M>
+# Add luci-app-vssr 
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 
@@ -56,10 +56,13 @@ git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 rm -rf ../lean/luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
-#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Add luci-theme-infinityfreedom
 git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
+
+# Add luci-theme-atmaterial
+svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial
 
 # Add luci-app-advancedsetting
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting
@@ -110,9 +113,9 @@ git clone --depth=1 https://github.com/AdguardTeam/AdGuardHome
 #sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 # Mod zzz-default-settings
-pushd package/lean/default-settings/files
-sed -i '/http/d' zzz-default-settings
-export orig_version="$(cat "zzz-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')"
-sed -i "s/${orig_version}/${orig_version} ($(date +"%Y-%m-%d"))/g" zzz-default-settings
-popd
+#pushd package/lean/default-settings/files
+#sed -i '/http/d' zzz-default-settings
+#export orig_version="$(cat "zzz-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')"
+#sed -i "s/${orig_version}/${orig_version} ($(date +"%Y-%m-%d"))/g" zzz-default-settings
+#popd
 
