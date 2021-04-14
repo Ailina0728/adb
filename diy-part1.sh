@@ -97,17 +97,19 @@ sed -i '$a src-git https://github.com/zcy85611/openwrt-luci-kcp-udp' feeds.conf.
 sed -i '$a src-git https://github.com/destan19/OpenAppFilter' feeds.conf.default
 
 # Use Lienol's https-dns-proxy package
-pushd feeds/packages/net
-rm -rf https_dns_proxy
-sed -i '$a svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy' feeds.conf.default
-popd
+#pushd feeds/packages/net
+#rm -rf https_dns_proxy
+#sed -i '$a svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy' feeds.conf.default
+#popd
 
 # Use snapshots' syncthing package
-pushd feeds/packages/utils
-rm -rf syncthing
+pushd ../utils
+mkdir syncthing
+#rm -rf syncthing
 sed -i '$a svn co https://github.com/openwrt/packages/trunk/utils/syncthing' feeds.conf.default
 popd
 
+sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-app-syncthing' feeds.conf.default
 # Add luci-AdGuardHome
 sed -i '$a src-git https://github.com/AdguardTeam/AdGuardHome' feeds.conf.default
 
