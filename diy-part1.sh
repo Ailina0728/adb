@@ -63,28 +63,29 @@ sed -i '$a src-git https://github.com/jerrykuku/luci-app-argon-config' feeds.con
 sed -i '$a src-git https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom' feeds.conf.default
 
 # Add luci-theme-atmaterial
-svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial' feeds.conf.default
+sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial' feeds.conf.default
+
 
 # Add luci-app-advancedsetting
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting' feeds.conf.default
+sed -i '$a svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting' feeds.conf.default
 
 # Add luci-app-smartinfo
-svn co https://github.com/281677160/openwrt-package/trunk/luci-app-smartinfo' feeds.conf.default
+sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-app-smartinfo' feeds.conf.default
 
 # Add luci-app-dnsfilter
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-dnsfilter' feeds.conf.default
+sed -i '$a svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-dnsfilter' feeds.conf.default
 
 # Add luci-theme-opentomcat
-svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat' feeds.conf.default
+sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat' feeds.conf.default
 
 # Add luci-theme-opentopd
-svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-opentopd' feeds.conf.default
+sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-opentopd' feeds.conf.default
 
 # Add luci-theme-rosy
-svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-rosy' feeds.conf.default
+sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-rosy' feeds.conf.default
 
 # Add luci-app-ttnode
-svn co https://github.com/281677160/openwrt-package/trunk/luci-app-ttnode' feeds.conf.default
+sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-app-ttnode' feeds.conf.default
 
 # Add subconverter
 sed -i '$a src-git https://github.com/tindy2013/openwrt-subconverter' feeds.conf.default
@@ -98,13 +99,13 @@ sed -i '$a src-git https://github.com/destan19/OpenAppFilter' feeds.conf.default
 # Use Lienol's https-dns-proxy package
 pushd feeds/packages/net
 rm -rf https_dns_proxy
-svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy' feeds.conf.default
+sed -i '$a svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy' feeds.conf.default
 popd
 
 # Use snapshots' syncthing package
 pushd feeds/packages/utils
 rm -rf syncthing
-svn co https://github.com/openwrt/packages/trunk/utils/syncthing' feeds.conf.default
+sed -i '$a svn co https://github.com/openwrt/packages/trunk/utils/syncthing' feeds.conf.default
 popd
 
 # Add luci-AdGuardHome
