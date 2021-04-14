@@ -18,30 +18,30 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 #sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
 
 # Add luci-theme-darkmatter
-sed -i '$a src-git https://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
+sed -i '$a src-git darkmatter https://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
 
 # Add luci-app-passwall
-sed -i '$a src-git https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 
 # Add luci-app-vssr 
-sed -i '$a src-git https://github.com/jerrykuku/lua-maxminddb.git' feeds.conf.default
-sed -i '$a src-git https://github.com/jerrykuku/luci-app-vssr' feeds.conf.default
+sed -i '$a src-git maxminddb https://github.com/jerrykuku/lua-maxminddb.git' feeds.conf.default
+sed -i '$a src-git vssr https://github.com/jerrykuku/luci-app-vssr' feeds.conf.default
 
 # Add mentohust & luci-app-mentohust
-sed -i '$a src-git https://github.com/BoringCat/luci-app-mentohust' feeds.conf.default
-sed -i '$a src-git https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk' feeds.conf.default
+sed -i '$a src-git mentohust https://github.com/BoringCat/luci-app-mentohust' feeds.conf.default
+sed -i '$a src-git MentoHUST-OpenWrt-ipk https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk' feeds.conf.default
 
 # Add luci-proto-minieap
-sed -i '$a src-git https://github.com/ysc3839/luci-proto-minieap' feeds.conf.default
+sed -i '$a src-git minieap https://github.com/ysc3839/luci-proto-minieap' feeds.conf.default
 
 # Add ServerChan
-sed -i '$a src-git https://github.com/tty228/luci-app-serverchan' feeds.conf.default
+sed -i '$a src-git serverchan https://github.com/tty228/luci-app-serverchan' feeds.conf.default
 
 # Add OpenClash
-sed -i '$a src-git -b master https://github.com/vernesong/OpenClash' feeds.conf.default
+sed -i '$a src-git -b master OpenClash https://github.com/vernesong/OpenClash' feeds.conf.default
 
 # Add luci-app-onliner
-sed -i '$a src-git https://github.com/rufengsuixing/luci-app-onliner' feeds.conf.default
+sed -i '$a src-git onliner https://github.com/rufengsuixing/luci-app-onliner' feeds.conf.default
 
 # Add luci-app-diskman
 #sed -i '$a src-git https://github.com/SuLingGG/luci-app-diskman' feeds.conf.default
@@ -50,23 +50,23 @@ sed -i '$a src-git https://github.com/rufengsuixing/luci-app-onliner' feeds.conf
 
 # Add luci-app-dockerman
 rm -rf ../lean/luci-app-docker
-sed -i '$a src-git https://github.com/KFERMercer/luci-app-dockerman' feeds.conf.default
-sed -i '$a src-git https://github.com/lisaac/luci-lib-docker' feeds.conf.default
+sed -i '$a src-git dockerman https://github.com/KFERMercer/luci-app-dockerman' feeds.conf.default
+sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
 
 # Add luci-theme-argon
 rm -rf ../lean/luci-theme-argon
-sed -i '$a src-git -b 18.06 https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
-sed -i '$a src-git https://github.com/jerrykuku/luci-app-argon-config' feeds.conf.default
+sed -i '$a src-git -b 18.06 argon https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
+sed -i '$a src-git argon-config https://github.com/jerrykuku/luci-app-argon-config' feeds.conf.default
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Add luci-theme-infinityfreedom
-sed -i '$a src-git https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom' feeds.conf.default
+sed -i '$a src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom' feeds.conf.default
 
 # Add luci-theme-atmaterial
-sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial' feeds.conf.default
+sed -i '$a svn co atmaterial https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial' feeds.conf.default
 
 # Add luci-app-advancedsetting
-sed -i '$a svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting' feeds.conf.default
+sed -i '$a svn co advancedsetting https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting' feeds.conf.default
 
 # Add luci-app-smartinfo
 sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-app-smartinfo' feeds.conf.default
