@@ -63,28 +63,28 @@ sed -i '$a src-git argon-config https://github.com/jerrykuku/luci-app-argon-conf
 sed -i '$a src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom' feeds.conf.default
 
 # Add luci-theme-atmaterial
-sed -i '$a svn co atmaterial https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial' feeds.conf.default
+sed -i '$a src-svn atmaterial https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial' feeds.conf.default
 
 # Add luci-app-advancedsetting
-sed -i '$a svn co advancedsetting https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting' feeds.conf.default
+sed -i '$a src-svn advancedsetting https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting' feeds.conf.default
 
 # Add luci-app-smartinfo
-sed -i '$a svn co smartinfo https://github.com/281677160/openwrt-package/trunk/luci-app-smartinfo' feeds.conf.default
+sed -i '$a src-svn smartinfo https://github.com/281677160/openwrt-package/trunk/luci-app-smartinfo' feeds.conf.default
 
 # Add luci-app-dnsfilter
-sed -i '$a svn co dnsfilter https://github.com/kenzok8/openwrt-packages/trunk/luci-app-dnsfilter' feeds.conf.default
+sed -i '$a src-svn dnsfilter https://github.com/kenzok8/openwrt-packages/trunk/luci-app-dnsfilter' feeds.conf.default
 
 # Add luci-theme-opentomcat
-sed -i '$a svn co opentomcat https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat' feeds.conf.default
+sed -i '$a src-svn opentomcat https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat' feeds.conf.default
 
 # Add luci-theme-opentopd
-sed -i '$a svn co opentopd https://github.com/281677160/openwrt-package/trunk/luci-theme-opentopd' feeds.conf.default
+sed -i '$a src-svn opentopd https://github.com/281677160/openwrt-package/trunk/luci-theme-opentopd' feeds.conf.default
 
 # Add luci-theme-rosy
-sed -i '$a svn co rosy https://github.com/281677160/openwrt-package/trunk/luci-theme-rosy' feeds.conf.default
+sed -i '$a src-svn rosy https://github.com/281677160/openwrt-package/trunk/luci-theme-rosy' feeds.conf.default
 
 # Add luci-app-ttnode
-sed -i '$a svn co ttnode https://github.com/281677160/openwrt-package/trunk/luci-app-ttnode' feeds.conf.default
+sed -i '$a src-svn ttnode https://github.com/281677160/openwrt-package/trunk/luci-app-ttnode' feeds.conf.default
 
 # Add subconverter
 sed -i '$a src-git subconverter https://github.com/tindy2013/openwrt-subconverter' feeds.conf.default
@@ -108,7 +108,7 @@ sed -i '$a src-git OpenAppFilter https://github.com/destan19/OpenAppFilter' feed
 #sed -i '$a svn co https://github.com/openwrt/packages/trunk/utils/syncthing' feeds.conf.default
 #popd
 
-sed -i '$a svn co syncthing https://github.com/281677160/openwrt-package/trunk/luci-app-syncthing' feeds.conf.default
+sed -i '$a src-svn syncthing https://github.com/281677160/openwrt-package/trunk/luci-app-syncthing' feeds.conf.default
 # Add luci-AdGuardHome
 sed -i '$a src-git AdGuardHome https://github.com/AdguardTeam/AdGuardHome' feeds.conf.default
 
