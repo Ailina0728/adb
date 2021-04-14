@@ -14,11 +14,12 @@
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 #sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
 
-sed -i '$a src-git darkmatter https://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
+# Add luci-theme-darkmatter
+sed -i '$a src-git https://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
 
 # Add luci-app-passwall
 sed -i '$a src-git https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
