@@ -10,7 +10,6 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-# Add luci-theme-atmaterial
-svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial
-
+# Add luci-theme-rosy
+svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-rosy
 
