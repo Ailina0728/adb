@@ -103,11 +103,11 @@ sed -i '$a src-git https://github.com/destan19/OpenAppFilter' feeds.conf.default
 #popd
 
 # Use snapshots' syncthing package
-pushd package/utils
-mkdir syncthing
+#pushd package/utils
+#mkdir syncthing
 #rm -rf syncthing
-sed -i '$a svn co https://github.com/openwrt/packages/trunk/utils/syncthing' feeds.conf.default
-popd
+#sed -i '$a svn co https://github.com/openwrt/packages/trunk/utils/syncthing' feeds.conf.default
+#popd
 
 sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-app-syncthing' feeds.conf.default
 # Add luci-AdGuardHome
