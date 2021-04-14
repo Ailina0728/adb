@@ -45,9 +45,9 @@ sed -i '$a src-git -b master https://github.com/vernesong/OpenClash' feeds.conf.
 sed -i '$a src-git https://github.com/rufengsuixing/luci-app-onliner' feeds.conf.default
 
 # Add luci-app-diskman
-sed -i '$a src-git https://github.com/SuLingGG/luci-app-diskman' feeds.conf.default
-mkdir parted
-cp luci-app-diskman/Parted.Makefile parted/Makefile
+#sed -i '$a src-git https://github.com/SuLingGG/luci-app-diskman' feeds.conf.default
+#mkdir parted
+#cp luci-app-diskman/Parted.Makefile parted/Makefile
 
 # Add luci-app-dockerman
 rm -rf ../lean/luci-app-docker
@@ -65,7 +65,6 @@ sed -i '$a src-git https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedo
 
 # Add luci-theme-atmaterial
 sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-atmaterial' feeds.conf.default
-
 
 # Add luci-app-advancedsetting
 sed -i '$a svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-advancedsetting' feeds.conf.default
