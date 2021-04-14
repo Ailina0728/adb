@@ -11,5 +11,5 @@
 #
 
 # Add luci-theme-rosy
-svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-rosy
+svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-rosy rosy
 
