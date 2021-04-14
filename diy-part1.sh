@@ -28,8 +28,8 @@ sed -i '$a src-git maxminddb https://github.com/jerrykuku/lua-maxminddb.git' fee
 sed -i '$a src-git vssr https://github.com/jerrykuku/luci-app-vssr' feeds.conf.default
 
 # Add mentohust & luci-app-mentohust
-sed -i '$a src-git mentohust https://github.com/BoringCat/luci-app-mentohust' feeds.conf.default
-sed -i '$a src-git MentoHUST https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk' feeds.conf.default
+sed -i '$a src-git BoringCat https://github.com/BoringCat/luci-app-mentohust' feeds.conf.default
+sed -i '$a src-git KyleRicardo https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk' feeds.conf.default
 
 # Add luci-proto-minieap
 sed -i '$a src-git minieap https://github.com/ysc3839/luci-proto-minieap' feeds.conf.default
