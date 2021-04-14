@@ -103,7 +103,7 @@ sed -i '$a src-git https://github.com/destan19/OpenAppFilter' feeds.conf.default
 #popd
 
 # Use snapshots' syncthing package
-pushd ../utils
+pushd package/utils
 mkdir syncthing
 #rm -rf syncthing
 sed -i '$a svn co https://github.com/openwrt/packages/trunk/utils/syncthing' feeds.conf.default
