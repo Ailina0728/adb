@@ -39,13 +39,11 @@ sed -i '$a src-git onliner https://github.com/rufengsuixing/luci-app-onliner' fe
 #sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
 
 # Add luci-theme-argon
-pushd openwrt/package/lean
+cd package/lean
 rm -rf luci-theme-argon
 sed -i '$a src-git -b 18.06 https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
 sed -i '$a src-git argonconfig https://github.com/jerrykuku/luci-app-argon-config' feeds.conf.default
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-popd
-
 
 # Add luci-theme-rosy
 sed -i '$a src-git rosy https://github.com/rosywrt/luci-theme-rosy' feeds.conf.default
