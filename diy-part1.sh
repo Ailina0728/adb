@@ -3,12 +3,12 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 
 # Add luci-theme-argon
-rm -rf ./package/lean/luci-theme-argon
+rm -rf lean/luci-theme-argon
 sed -i '$a src-git -b 18.06 https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
 sed -i '$a src-git argonconfig https://github.com/jerrykuku/luci-app-argon-config' feeds.conf.default
 
 # Add luci-app-dockerman
-rm -rf ./package/lean/luci-app-docker
+rm -rf lean/luci-app-docker
 sed -i '$a src-git dockerman https://github.com/KFERMercer/luci-app-dockerman' feeds.conf.default
 sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
 
