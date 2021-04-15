@@ -34,9 +34,9 @@ sed -i '$a src-git onliner https://github.com/rufengsuixing/luci-app-onliner' fe
 
 
 # Add luci-app-dockerman
-rm -rf package/lean/luci-app-docker
-sed -i '$a src-git dockerman https://github.com/KFERMercer/luci-app-dockerman' feeds.conf.default
-sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
+#rm -rf package/lean/luci-app-docker
+#sed -i '$a src-git dockerman https://github.com/KFERMercer/luci-app-dockerman' feeds.conf.default
+#sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
 
 # Add luci-theme-argon
 rm -rf package/lean/luci-theme-argon
