@@ -11,10 +11,9 @@
 #
 
 # Add a feed source
-#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-#sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 #sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
 
@@ -30,10 +29,10 @@ sed -i '$a src-git darkmatter https://github.com/apollo-ng/luci-theme-darkmatter
 
 # Add mentohust & luci-app-mentohust
 sed -i '$a src-git mentohust https://github.com/BoringCat/luci-app-mentohust' feeds.conf.default
-sed -i '$a src-git MentoHUST-OpenWrt-ipk https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk' feeds.conf.default
+sed -i '$a src-git KyleRicardo https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk' feeds.conf.default
 
 # Add luci-proto-minieap
-sed -i '$a src-git minieap https://github.com/ysc3839/luci-proto-minieap' feeds.conf.default
+#sed -i '$a src-git minieap https://github.com/ysc3839/luci-proto-minieap' feeds.conf.default
 
 # Add ServerChan
 #sed -i '$a src-git serverchan https://github.com/tty228/luci-app-serverchan' feeds.conf.default
@@ -59,8 +58,8 @@ sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.
 
 # Add luci-theme-argon
 rm -rf ../lean/luci-theme-argon
-sed -i '$a src-git -b 18.06 argon https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
-sed -i '$a src-git argon-config https://github.com/jerrykuku/luci-app-argon-config' feeds.conf.default
+sed -i '$a src-git -b 18.06 https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
+sed -i '$a src-git argonconfig https://github.com/jerrykuku/luci-app-argon-config' feeds.conf.default
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Add luci-theme-infinityfreedom
@@ -85,19 +84,19 @@ sed -i '$a src-git argon-config https://github.com/jerrykuku/luci-app-argon-conf
 #sed -i '$a svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-opentopd' feeds.conf.default
 
 # Add luci-theme-rosy
-sed -i '$a src-git https://github.com/rosywrt/luci-theme-rosy' feeds.conf.default
+sed -i '$a src-git rosy https://github.com/rosywrt/luci-theme-rosy' feeds.conf.default
 
 # Add luci-app-ttnode
-sed -i '$a src-git https://github.com/jerrykuku/luci-app-ttnode' feeds.conf.default
+sed -i '$a src-git ttnode https://github.com/jerrykuku/luci-app-ttnode' feeds.conf.default
 
 # Add subconverter
-sed -i '$a src-git https://github.com/tindy2013/openwrt-subconverter' feeds.conf.default
+sed -i '$a src-git subconverter https://github.com/tindy2013/openwrt-subconverter' feeds.conf.default
 
 # Add luci-udptools
-sed -i '$a src-git https://github.com/zcy85611/openwrt-luci-kcp-udp' feeds.conf.default
+sed -i '$a src-git udp https://github.com/zcy85611/openwrt-luci-kcp-udp' feeds.conf.default
 
 # Add OpenAppFilter
-sed -i '$a src-git https://github.com/destan19/OpenAppFilter' feeds.conf.default
+sed -i '$a src-git OpenAppFilter https://github.com/destan19/OpenAppFilter' feeds.conf.default
 
 # Use Lienol's https-dns-proxy package
 #pushd feeds/packages/net
