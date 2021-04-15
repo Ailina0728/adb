@@ -15,35 +15,25 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
-#pushd package
-#sed -i '$a svn co https://github.com/openwrt/packages/branches/openwrt-19.07/lang/golang package/lang
-#svn co https://github.com/openwrt/packages/tree/master
-#popd
-
-
 # Add luci-theme-darkmatter
 sed -i '$a src-git darkmatter https://github.com/apollo-ng/luci-theme-darkmatter' feeds.conf.default
-
-
 
 # Add mentohust & luci-app-mentohust
 sed -i '$a src-git mentohust https://github.com/BoringCat/luci-app-mentohust' feeds.conf.default
 sed -i '$a src-git KyleRicardo https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk' feeds.conf.default
 
-
-
 # Add luci-app-onliner
 sed -i '$a src-git onliner https://github.com/rufengsuixing/luci-app-onliner' feeds.conf.default
 
-
-
 # Add luci-app-dockerman
-rm -rf package/lean/luci-app-docker
+cd package/lean
+rm -rf luci-app-docker
 sed -i '$a src-git dockerman https://github.com/KFERMercer/luci-app-dockerman' feeds.conf.default
 sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
 
 # Add luci-theme-argon
-rm -rf package/lean/luci-theme-argon
+cd package/lean
+rm -rf luci-theme-argon
 sed -i '$a src-git -b 18.06 https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
 sed -i '$a src-git argonconfig https://github.com/jerrykuku/luci-app-argon-config' feeds.conf.default
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
