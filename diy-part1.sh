@@ -39,7 +39,8 @@ sed -i '$a src-git onliner https://github.com/rufengsuixing/luci-app-onliner' fe
 #sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
 
 # Add luci-theme-argon
-rm -rf package/lean/luci-theme-argon
+pushd lede/package/lean
+rm -rf luci-theme-argon
 sed -i '$a src-git -b 18.06 https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
 sed -i '$a src-git argonconfig https://github.com/jerrykuku/luci-app-argon-config' feeds.conf.default
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
