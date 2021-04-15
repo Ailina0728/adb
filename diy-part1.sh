@@ -16,7 +16,7 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 #pushd package
-sed -i '$a svn co https://github.com/openwrt/packages/branches/openwrt-19.07/lang/golang package/lang
+#sed -i '$a svn co https://github.com/openwrt/packages/branches/openwrt-19.07/lang/golang package/lang
 #svn co https://github.com/openwrt/packages/tree/master
 #popd
 
@@ -43,12 +43,10 @@ sed -i '$a src-git dockerman https://github.com/KFERMercer/luci-app-dockerman' f
 sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
 
 # Add luci-theme-argon
-pushd package/lean
-rm -rf luci-theme-argon
+rm -rf package/lean/luci-theme-argon
 sed -i '$a src-git -b 18.06 https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
 sed -i '$a src-git argonconfig https://github.com/jerrykuku/luci-app-argon-config' feeds.conf.default
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-popd
 
 # Add luci-theme-rosy
 sed -i '$a src-git rosy https://github.com/rosywrt/luci-theme-rosy' feeds.conf.default
