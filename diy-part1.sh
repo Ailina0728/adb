@@ -15,6 +15,10 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
+#pushd package
+sed -i '$a svn co https://github.com/openwrt/packages/branches/openwrt-19.07/lang/golang package/lang
+#svn co https://github.com/openwrt/packages/tree/master
+#popd
 
 
 # Add luci-theme-darkmatter
@@ -34,9 +38,9 @@ sed -i '$a src-git onliner https://github.com/rufengsuixing/luci-app-onliner' fe
 
 
 # Add luci-app-dockerman
-#rm -rf package/lean/luci-app-docker
-#sed -i '$a src-git dockerman https://github.com/KFERMercer/luci-app-dockerman' feeds.conf.default
-#sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
+rm -rf package/lean/luci-app-docker
+sed -i '$a src-git dockerman https://github.com/KFERMercer/luci-app-dockerman' feeds.conf.default
+sed -i '$a src-git docker https://github.com/lisaac/luci-lib-docker' feeds.conf.default
 
 # Add luci-theme-argon
 pushd package/lean
