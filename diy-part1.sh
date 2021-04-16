@@ -40,3 +40,8 @@ sed -i '$a src-git zcy85611 https://github.com/zcy85611/openwrt-luci-kcp-udp' fe
 
 # Add OpenAppFilter
 #git clone https://github.com/destan19/OpenAppFilter.git
+feeds/small8
+cp -r feeds/small8/luci/applications/luci-app-adguardhome luci/applications/luci-app-adguardhome
+cp -r temp/packages/net/adguardhome packages/net/adguardhome
+cp -r temp/packages/lang/node-yarn packages/lang/node-yarn
+cp -r temp/packages/devel/packr packages/devel/packr
