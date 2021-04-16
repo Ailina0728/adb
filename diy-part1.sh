@@ -9,15 +9,15 @@
 # Add luci-app-dockerman
 #sed -i '$a src-git https://github.com/KFERMercer/luci-app-dockerman' feeds.conf.default
 #sed -i '$a src-git lisaac https://github.com/lisaac/luci-lib-docker' feeds.conf.default
-pushd customfeeds
-mkdir temp
-git clone https://github.com/immortalwrt/packages -b openwrt-18.06 temp/packages
-git clone https://github.com/immortalwrt/luci -b openwrt-18.06 temp/luci
-cp -r temp/luci/applications/luci-app-adguardhome luci/applications/luci-app-adguardhome
-cp -r temp/packages/net/adguardhome packages/net/adguardhome
-cp -r temp/packages/lang/node-yarn packages/lang/node-yarn
-cp -r temp/packages/devel/packr packages/devel/packr
-popd
+#pushd customfeeds
+#mkdir temp
+#git clone https://github.com/immortalwrt/packages -b openwrt-18.06 temp/packages
+#git clone https://github.com/immortalwrt/luci -b openwrt-18.06 temp/luci
+#cp -r temp/luci/applications/luci-app-adguardhome luci/applications/luci-app-adguardhome
+#cp -r temp/packages/net/adguardhome packages/net/adguardhome
+#cp -r temp/packages/lang/node-yarn packages/lang/node-yarn
+#cp -r temp/packages/devel/packr packages/devel/packr
+#popd
 
 # Add a feed source
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
