@@ -73,9 +73,8 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: 更新feeds文件
-      run: cd openwrt/package/feeds/small8
-           rm -rf {adguardhome,luci-app-adguardhome,luci-app-aliddns,luci-app-gost,luci-app-bypass}
-           cd -openwrt
+      run: cd openwrt
+           rm -rf package/feeds/small8{adguardhome,luci-app-adguardhome,luci-app-aliddns,luci-app-gost,luci-app-bypass}
            ./scripts/feeds update -a
 
     - name: 安装feeds文件
