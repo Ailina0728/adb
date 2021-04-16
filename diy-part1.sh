@@ -13,11 +13,11 @@ pushd customfeeds
 mkdir temp
 git clone https://github.com/immortalwrt/packages -b openwrt-18.06 temp/packages
 git clone https://github.com/immortalwrt/luci -b openwrt-18.06 temp/luci
-
 cp -r temp/luci/applications/luci-app-adguardhome luci/applications/luci-app-adguardhome
 cp -r temp/packages/net/adguardhome packages/net/adguardhome
 cp -r temp/packages/lang/node-yarn packages/lang/node-yarn
 cp -r temp/packages/devel/packr packages/devel/packr
+popd
 
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
