@@ -65,4 +65,5 @@ sed -i '$a src-git tindy2013 https://github.com/tindy2013/openwrt-subconverter' 
 sed -i '$a src-git zcy85611 https://github.com/zcy85611/openwrt-luci-kcp-udp' feeds.conf.default
 
 # Add OpenAppFilter
-git clone https://github.com/destan19/OpenAppFilter.git
+sed -i '$a src-git openappfilter https://github.com/destan19/OpenAppFilter' feeds.conf.default
+
