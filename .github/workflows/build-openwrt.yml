@@ -74,7 +74,11 @@ jobs:
 
     - name: 更新feeds文件
       run: cd openwrt
-           rm -rf package/feeds/small8{adguardhome,luci-app-adguardhome,luci-app-aliddns,luci-app-gost,luci-app-bypass}
+           rm -rf package/feeds/small8/adguardhome
+           rm -rf package/feeds/small8/luci-app-adguardhome
+           rm -rf package/feeds/small8/luci-app-aliddns
+           rm -rf package/feeds/small8/luci-app-gost
+           rm -rf package/feeds/small8/luci-app-bypass
            ./scripts/feeds update -a
 
     - name: 安装feeds文件
